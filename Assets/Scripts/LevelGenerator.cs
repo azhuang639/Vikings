@@ -4,14 +4,19 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
-    private Vector3 currentPosition = new Vector3(0, 0, 0);
-
+    [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<GameObject> terrains = new List<GameObject>();
+
+    private Vector3 currentPosition = new Vector3(0, 0, 0);
+    private List<GameObject> currentTerrains = new List<GameObject>();
 
     // Start is called before the first frame update
     void Start()
     {
-        SpawnTerrain();
+        for (int i = 0; i < maxTerrainCount; i++)
+        {
+            SpawnTerrain();
+        }
     }
 
     // Update is called once per frame
@@ -25,8 +30,16 @@ public class LevelGenerator : MonoBehaviour
 
     private void SpawnTerrain()
     {
-        Instantiate(terrains[Random.Range(0, terrains.Count)], currentPosition,
+        if (currentTerrains.Count >= maxTerrainCount)
+        {
+            GameObject removedTerrain = currentTerrains[0];
+            currentTerrains.RemoveAt(0);
+            Destroy(removedTerrain);
+        }
+        GameObject terrain = Instantiate(terrains[Random.Range(0, terrains.Count)], currentPosition,
             Quaternion.identity);
         currentPosition.z++;
+        currentTerrains.Add(terrain);
+
     }
 }
