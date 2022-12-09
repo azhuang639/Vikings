@@ -7,9 +7,10 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
     [SerializeField] private Queue<GameObject> terrainsQueue = new Queue<GameObject>();
+    [SerializeField] private GameObject player;
     //[SerializeField] private Camera mainCamera;
 
-    private Vector3 currentPosition = new Vector3(0, 0, 0);
+    private Vector3 currentPosition = new Vector3(0, 0, -9);
     private List<GameObject> currentTerrains = new List<GameObject>();
 
     private enum TerrainType
@@ -24,21 +25,25 @@ public class LevelGenerator : MonoBehaviour
     {
         for (int i = 0; i < maxTerrainCount; i++)
         {
-            SpawnTerrain();
+            SpawnTerrain(0);
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            SpawnTerrain();
-        }
+        //if (Input.GetKeyDown(KeyCode.W))
+        //{
+        //    SpawnTerrain();
+        //}
     }
 
-    private void SpawnTerrain()
+    public void SpawnTerrain(float playerZPosition)
     {
+        if (currentPosition.z - playerZPosition > maxTerrainCount - 10)
+        {
+            return;
+        }
         if (currentTerrains.Count >= maxTerrainCount)
         {
             GameObject removedTerrain = currentTerrains[0];
