@@ -259,6 +259,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: mainCamera
+      value: 
+      objectReference: {fileID: 322939660}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: maxTerrainCount
       value: 20
       objectReference: {fileID: 0}

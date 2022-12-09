@@ -5,10 +5,19 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] private int maxTerrainCount;
-    [SerializeField] private List<GameObject> terrains = new List<GameObject>();
+    [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
+    [SerializeField] private Queue<GameObject> terrainsQueue = new Queue<GameObject>();
+    //[SerializeField] private Camera mainCamera;
 
     private Vector3 currentPosition = new Vector3(0, 0, 0);
     private List<GameObject> currentTerrains = new List<GameObject>();
+
+    private enum TerrainType
+    {
+        Grass,
+        Sand,
+        Water
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -36,10 +45,26 @@ public class LevelGenerator : MonoBehaviour
             currentTerrains.RemoveAt(0);
             Destroy(removedTerrain);
         }
-        GameObject terrain = Instantiate(terrains[Random.Range(0, terrains.Count)], currentPosition,
-            Quaternion.identity);
-        currentPosition.z++;
-        currentTerrains.Add(terrain);
+        if (terrainsQueue.Count == 0)
+        {
+            GenerateTerrainQueue();
+        }
 
+        GameObject terrain = Instantiate(terrainsQueue.Dequeue(), currentPosition, Quaternion.identity);
+        currentPosition.z++;
+        //Vector3 oldPosition = mainCamera.transform.position;
+        //Vector3 newPosition = new Vector3(oldPosition.x, oldPosition.y, oldPosition.z + 1);
+        //mainCamera.transform.position = newPosition;
+        currentTerrains.Add(terrain);
+    }
+
+    private void GenerateTerrainQueue()
+    {
+        TerrainData nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
+        int rowsInQueue = Random.Range(1, nextTerrainInQueue.maxRows);
+        for (int i = 0; i < rowsInQueue; i++)
+        {
+            terrainsQueue.Enqueue(nextTerrainInQueue.terrain);
+        }
     }
 }

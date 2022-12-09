@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c287a90264c85451d82c8524ed8d36bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  terrains:
-  - {fileID: 6742250947582588701, guid: 2d3026041968f4350bdc2912c67b7ea4, type: 3}
-  - {fileID: 8978197277308463785, guid: b897ee033ad8e4002adbce1f753ec480, type: 3}
-  - {fileID: 7519805205414969065, guid: f3fa91c2407e94933af0fb875f44126d, type: 3}
+  maxTerrainCount: 0
+  terrainDatas:
+  - {fileID: 11400000, guid: bb65b3c214ea642d8a5f63e2613478f3, type: 2}
+  - {fileID: 11400000, guid: 874b021fcf4c1446c894b2a8aa87f620, type: 2}
+  - {fileID: 11400000, guid: 0420528530c354548b15f576d663a24d, type: 2}
