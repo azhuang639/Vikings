@@ -5,9 +5,10 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private LevelGenerator levelGenerator;
+    //[SerializeField] private Camera mainCamera;
 
     private Animator animator;
-    public bool isHopping;
+    private bool isHopping;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +55,7 @@ public class Player : MonoBehaviour
 
     private void MovePlayer(Vector3 difference)
     {
+        //mainCamera.transform.position = mainCamera.transform.position + difference;
         animator.SetTrigger("hop");
         isHopping = true;
         transform.position = transform.position + difference;
