@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
-  m_Name: WaterWithShip
+  m_Name: WaterWithShipLeft
   m_EditorClassIdentifier: 
-  terrain: {fileID: 7519805205414969065, guid: dbffb1ed30e65476d96cc936aca5e164, type: 3}
+  terrain: {fileID: 8151016037077972050, guid: 0ca0e87ca88304c85bf69346966be8ce, type: 3}
   maxRows: 3
