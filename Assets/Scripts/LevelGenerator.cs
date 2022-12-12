@@ -57,19 +57,16 @@ public class LevelGenerator : MonoBehaviour
 
         GameObject terrain = Instantiate(terrainsQueue.Dequeue(), currentPosition, Quaternion.identity);
         currentPosition.z++;
-        //Vector3 oldPosition = mainCamera.transform.position;
-        //Vector3 newPosition = new Vector3(oldPosition.x, oldPosition.y, oldPosition.z + 1);
-        //mainCamera.transform.position = newPosition;
         currentTerrains.Add(terrain);
     }
 
     private void GenerateTerrainQueue()
     {
         TerrainData nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
-        int rowsInQueue = Random.Range(1, nextTerrainInQueue.maxRows);
-        for (int i = 0; i < rowsInQueue; i++)
+        GameObject[] nextTerrains = nextTerrainInQueue.GetTerrains();
+        for (int i = 0; i < nextTerrains.Length; i++)
         {
-            terrainsQueue.Enqueue(nextTerrainInQueue.terrain);
+            terrainsQueue.Enqueue(nextTerrains[i]);
         }
     }
 }
