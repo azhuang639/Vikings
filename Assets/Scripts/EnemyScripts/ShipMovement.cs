@@ -19,6 +19,9 @@ public class ShipMovement: MonoBehaviour
 
         
     }
+
+    //need to double check that the collider we are getting is the "wood" part of the ship
+    //and that the ship is actually two units big
     private void OnCollisionEnter(Collision collision)
     {
         //if we hit the ship

@@ -6,12 +6,15 @@ public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
+    [SerializeField] private GameObject waterPlane;
     //game object, row size
     [SerializeField] private Queue<KeyValuePair<GameObject, int>> terrainsQueue = new Queue<KeyValuePair<GameObject, int>>();
     [SerializeField] private GameObject player;
 
     private Vector3 currentPosition = new Vector3(0, 0, -9);
     private List<GameObject> currentTerrains = new List<GameObject>();
+    private GameObject inGameWaterPlane; 
+   
 
     private enum TerrainType
     {
@@ -27,6 +30,8 @@ public class LevelGenerator : MonoBehaviour
         {
             SpawnTerrain(0);
         }
+
+        inGameWaterPlane = Instantiate(waterPlane, new Vector3(0, 0, 0), Quaternion.identity);
     }
 
     // Update is called once per frame
@@ -58,6 +63,7 @@ public class LevelGenerator : MonoBehaviour
         KeyValuePair<GameObject, int> terrainPairFromQueue = terrainsQueue.Dequeue();
         GameObject terrain = Instantiate(terrainPairFromQueue.Key, currentPosition, Quaternion.identity);
         currentPosition.z += terrainPairFromQueue.Value;
+        //inGameWaterPlane.transform.localScale += new Vector3(0, 0, 1); 
         currentTerrains.Add(terrain);
     }
 
