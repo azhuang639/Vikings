@@ -13,7 +13,8 @@ public class LevelGenerator : MonoBehaviour
 
     private Vector3 currentPosition = new Vector3(0, 0, -9);
     private List<GameObject> currentTerrains = new List<GameObject>();
-    private GameObject inGameWaterPlane; 
+    private GameObject inGameWaterPlane;
+    private int waterPlaneCounter = 1;
    
 
     private enum TerrainType
@@ -45,6 +46,11 @@ public class LevelGenerator : MonoBehaviour
 
     public void SpawnTerrain(float playerZPosition)
     {
+        if (currentPosition.z > (waterPlaneCounter-1) * 50)
+        {
+            Instantiate(waterPlane, new Vector3(0, 0, waterPlaneCounter * 50), Quaternion.identity);
+            waterPlaneCounter++;
+        }
         if (currentPosition.z - playerZPosition > maxTerrainCount - 10)
         {
             return;

@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
   m_Name: WaterObstacleIsland1
   m_EditorClassIdentifier: 
+  terrainType: 2
   terrain: {fileID: 6611449917425922078, guid: 404a119560dee4a97ad7657703d71771, type: 3}
   maxRows: 3
+  multipleTerrains: []
+  region: {fileID: 6611449917425922078, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+  regionRowSize: 3

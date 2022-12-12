@@ -350,6 +350,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 322939660}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: waterPlane
+      value: 
+      objectReference: {fileID: 181007296531135188, guid: 59236745002f54d4d9349a3623c1aae9, type: 3}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: maxTerrainCount
       value: 40
       objectReference: {fileID: 0}
@@ -358,9 +362,21 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
-      propertyPath: terrainDatas.Array.data[3]
+      propertyPath: terrainDatas.Array.data[0]
+      value: 
+      objectReference: {fileID: 11400000, guid: 0420528530c354548b15f576d663a24d, type: 2}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: terrainDatas.Array.data[1]
       value: 
       objectReference: {fileID: 11400000, guid: 380b4a626991844b5a344776db0017bc, type: 2}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: terrainDatas.Array.data[2]
+      value: 
+      objectReference: {fileID: 11400000, guid: cf518082c9c654907b91687b94a916b1, type: 2}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: terrainDatas.Array.data[3]
+      value: 
+      objectReference: {fileID: 11400000, guid: 729d0fcec70ae4143a26c6fc5199f435, type: 2}
     - target: {fileID: 5575375506575081622, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: m_Name
       value: Level Generator

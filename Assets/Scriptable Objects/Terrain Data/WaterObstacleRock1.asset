@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
   m_Name: WaterObstacleRock1
   m_EditorClassIdentifier: 
+  terrainType: 2
   terrain: {fileID: 7519805205414969065, guid: b6e751dddf2a84e1ca426247805fc949, type: 3}
   maxRows: 3
+  multipleTerrains: []
+  region: {fileID: 7519805205414969065, guid: b6e751dddf2a84e1ca426247805fc949, type: 3}
+  regionRowSize: 3
