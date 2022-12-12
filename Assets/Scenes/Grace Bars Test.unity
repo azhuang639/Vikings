@@ -237,7 +237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7519805205414969065, guid: b6e751dddf2a84e1ca426247805fc949, type: 3}
       propertyPath: m_Name
-      value: Water Obstacle 1
+      value: Water Obstacle 1 Rock
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6e751dddf2a84e1ca426247805fc949, type: 3}
@@ -854,6 +854,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b897ee033ad8e4002adbce1f753ec480, type: 3}
+--- !u!1001 &5888149064157852444
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1667006766090742700, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6611449917425922078, guid: 404a119560dee4a97ad7657703d71771, type: 3}
+      propertyPath: m_Name
+      value: Water Obstacle 3 Islands
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 404a119560dee4a97ad7657703d71771, type: 3}
 --- !u!1001 &6708028615297087661
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -920,7 +977,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 870579649972173591, guid: 8c4bbe0c883c34a84973561db0b7bdb4, type: 3}
       propertyPath: m_Name
-      value: Water Obstacle 2
+      value: Water Obstacle 2 Rock
       objectReference: {fileID: 0}
     - target: {fileID: 7638560725931846271, guid: 8c4bbe0c883c34a84973561db0b7bdb4, type: 3}
       propertyPath: m_RootOrder
@@ -936,7 +993,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7638560725931846271, guid: 8c4bbe0c883c34a84973561db0b7bdb4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7
+      value: -5
       objectReference: {fileID: 0}
     - target: {fileID: 7638560725931846271, guid: 8c4bbe0c883c34a84973561db0b7bdb4, type: 3}
       propertyPath: m_LocalRotation.w
