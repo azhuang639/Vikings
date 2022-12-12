@@ -8,17 +8,22 @@ public class TerrainData : ScriptableObject
     public enum TerrainType
     {
         SingleRow,
-        MultiRow
+        MultiRow,
+        Region
     }
 
     public TerrainType terrainType = TerrainType.SingleRow;
 
+    //for single row
     public GameObject terrain;
     public int maxRows;
 
     public GameObject[] multipleTerrains;
 
-    public GameObject[] GetTerrains()
+    public GameObject region;
+    public int regionRowSize;
+
+    public GameObject[] GetTerrainRows()
     {
         if (terrainType == TerrainType.SingleRow)
         {

@@ -6,9 +6,9 @@ public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
-    [SerializeField] private Queue<GameObject> terrainsQueue = new Queue<GameObject>();
+    //game object, row size
+    [SerializeField] private Queue<KeyValuePair<GameObject, int>> terrainsQueue = new Queue<KeyValuePair<GameObject, int>>();
     [SerializeField] private GameObject player;
-    //[SerializeField] private Camera mainCamera;
 
     private Vector3 currentPosition = new Vector3(0, 0, -9);
     private List<GameObject> currentTerrains = new List<GameObject>();
@@ -55,18 +55,27 @@ public class LevelGenerator : MonoBehaviour
             GenerateTerrainQueue();
         }
 
-        GameObject terrain = Instantiate(terrainsQueue.Dequeue(), currentPosition, Quaternion.identity);
-        currentPosition.z++;
+        KeyValuePair<GameObject, int> terrainPairFromQueue = terrainsQueue.Dequeue();
+        GameObject terrain = Instantiate(terrainPairFromQueue.Key, currentPosition, Quaternion.identity);
+        currentPosition.z += terrainPairFromQueue.Value;
         currentTerrains.Add(terrain);
     }
 
     private void GenerateTerrainQueue()
     {
         TerrainData nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
-        GameObject[] nextTerrains = nextTerrainInQueue.GetTerrains();
+        //handles region
+        if (nextTerrainInQueue.terrainType == TerrainData.TerrainType.Region)
+        {
+            terrainsQueue.Enqueue(new KeyValuePair<GameObject, int> (nextTerrainInQueue.region, nextTerrainInQueue.regionRowSize));
+            return;
+        }
+
+        //handles rows
+        GameObject[] nextTerrains = nextTerrainInQueue.GetTerrainRows();
         for (int i = 0; i < nextTerrains.Length; i++)
         {
-            terrainsQueue.Enqueue(nextTerrains[i]);
+            terrainsQueue.Enqueue(new KeyValuePair<GameObject, int> (nextTerrains[i], 1));
         }
     }
 }
