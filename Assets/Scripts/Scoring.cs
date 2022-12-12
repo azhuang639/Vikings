@@ -13,21 +13,13 @@ public class Scoring : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        //score++;
-        //update to be based on how far player moves
-        //calculate player x movement - origin
-        //keep highest recorded x movement (compare player's current x position and high score, whichever is higher is displayed
-    }
+
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && player.transform.position.x >score)
+        if (Input.GetKeyDown(KeyCode.W) && player.transform.position.z >= score)
         {
             score +=1;
 
