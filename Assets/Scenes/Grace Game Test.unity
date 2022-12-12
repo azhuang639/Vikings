@@ -355,7 +355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[3]
@@ -365,6 +365,10 @@ PrefabInstance:
       propertyPath: terrainDatas.Array.data[4]
       value: 
       objectReference: {fileID: 11400000, guid: 654a010cedd80454c9abc44b0bd644b0, type: 2}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: terrainDatas.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 729d0fcec70ae4143a26c6fc5199f435, type: 2}
     - target: {fileID: 5575375506575081622, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: m_Name
       value: Level Generator
