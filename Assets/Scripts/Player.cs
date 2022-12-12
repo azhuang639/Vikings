@@ -20,7 +20,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && !isHopping)
+        if (Input.GetKeyDown(KeyCode.W))// && !isHopping)
         {
             float xDifference = 0;
             if (transform.position.x % 1 != 0)
@@ -29,7 +29,7 @@ public class Player : MonoBehaviour
             }
             MovePlayer(new Vector3(xDifference, 0, 1));
         }
-        else if (Input.GetKeyDown(KeyCode.S) && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.S))// && !isHopping)
         {
             float xDifference = 0;
             if (transform.position.x % 1 != 0)
@@ -38,11 +38,11 @@ public class Player : MonoBehaviour
             }
             MovePlayer(new Vector3(xDifference, 0, -1));
         }
-        else if (Input.GetKeyDown(KeyCode.A) && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.A))// && !isHopping)
         {
             MovePlayer(new Vector3(-1, 0, 0));
         }
-        else if (Input.GetKeyDown(KeyCode.D) && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.D))// && !isHopping)
         {
             MovePlayer(new Vector3(1, 0, 0));
         }
@@ -56,6 +56,7 @@ public class Player : MonoBehaviour
     private void MovePlayer(Vector3 difference)
     {
         //mainCamera.transform.position = mainCamera.transform.position + difference;
+        //animator.ResetTrigger("hop");
         animator.SetTrigger("hop");
         isHopping = true;
         transform.position = transform.position + difference;
