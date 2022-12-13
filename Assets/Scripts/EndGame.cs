@@ -9,6 +9,7 @@ public class EndGame : MonoBehaviour
 
     public GameObject endMenu;
     public bool isOver;
+    public GameObject bgmusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +26,8 @@ public class EndGame : MonoBehaviour
     {
         endMenu.SetActive(true);
         isOver = true;
+        bgmusic.GetComponent<AudioSource>().Stop();
+
     }
 
     public void resetLevel()
