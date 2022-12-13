@@ -9,7 +9,7 @@ public class Scoring : MonoBehaviour
     [SerializeField] private TMP_Text scoreText;
     public GameObject player;
 
-    private int score = 0;
+    public int score = 0;
     // Start is called before the first frame update
     void Start()
     {

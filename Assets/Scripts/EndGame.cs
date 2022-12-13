@@ -3,38 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class PauseMenu : MonoBehaviour
+public class EndGame : MonoBehaviour
 {
-    public GameObject pauseMenu;
-    public bool isPaused; 
+    public Scoring script;
 
+    public GameObject endMenu;
+    public bool isOver;
     // Start is called before the first frame update
     void Start()
     {
-        pauseMenu.SetActive(false);
+        endMenu.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-
+        
     }
 
-    public void pauseGame()
+    public void endGame()
     {
-        pauseMenu.SetActive(true);
-        Time.timeScale = 0f;
-        isPaused = true;
-
+        endMenu.SetActive(true);
+        isOver = true;
     }
 
-    public void resumeGame()
+    public void resetLevel()
     {
-        pauseMenu.SetActive(false);
-        Time.timeScale = 1f;
-        isPaused = false;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        Debug.Log("restarted");
     }
-
     public void quitGame()
     {
         Application.Quit();

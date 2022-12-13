@@ -10,6 +10,9 @@ public class Player : MonoBehaviour
     private Animator animator;
     private bool isHopping;
 
+    //end game
+    public EndGame EndGameScript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -67,5 +70,7 @@ public class Player : MonoBehaviour
     {
         levelGenerator.EndGame();
         Destroy(gameObject);
+        Debug.Log("player lost");
+        EndGameScript.endGame();
     }
 }
