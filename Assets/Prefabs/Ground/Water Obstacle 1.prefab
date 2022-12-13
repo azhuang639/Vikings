@@ -165,6 +165,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
       propertyPath: m_Name
       value: Rock Type1 02 (1)
@@ -181,20 +185,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
   m_PrefabInstance: {fileID: 1523104567156903567}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &4430869643036094107
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865139341406548958}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5861627387321823973, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
 --- !u!54 &4498320926231685627
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -211,6 +201,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &4430869643036094107
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865139341406548958}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5861627387321823973, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
 --- !u!1001 &2029107496328175671
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -266,6 +270,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: dca2ad1a3d98841f995ab11bae04efad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: dca2ad1a3d98841f995ab11bae04efad, type: 3}
       propertyPath: m_Name
       value: Rock Type1 01
@@ -277,20 +285,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: dca2ad1a3d98841f995ab11bae04efad, type: 3}
   m_PrefabInstance: {fileID: 2029107496328175671}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &5063394631807997238
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218715548350946662}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1816042949878585561, guid: dca2ad1a3d98841f995ab11bae04efad, type: 3}
 --- !u!54 &8601950056959601215
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -307,6 +301,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &5063394631807997238
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218715548350946662}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1816042949878585561, guid: dca2ad1a3d98841f995ab11bae04efad, type: 3}
 --- !u!4 &1991277100874876892 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: dca2ad1a3d98841f995ab11bae04efad, type: 3}
@@ -367,6 +375,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
       propertyPath: m_Name
       value: Rock Type6 02
@@ -383,20 +395,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
   m_PrefabInstance: {fileID: 2747557221495950573}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &5166976740412253040
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3089506099621949884}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7968188461868203328, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
 --- !u!54 &4708181016833385876
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -413,6 +411,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &5166976740412253040
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3089506099621949884}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7968188461868203328, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
 --- !u!1001 &3540313624467699500
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -468,6 +480,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
       propertyPath: m_Name
       value: Rock Type5 01
@@ -484,20 +500,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
   m_PrefabInstance: {fileID: 3540313624467699500}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &7723676958466646819
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4458794159436876413}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4366418611765410115, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
 --- !u!54 &21422301021107606
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -514,6 +516,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &7723676958466646819
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4458794159436876413}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4366418611765410115, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
 --- !u!1001 &4232306880670227139
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -569,6 +585,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
       propertyPath: m_Name
       value: Rock Type2 02
@@ -580,20 +600,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
   m_PrefabInstance: {fileID: 4232306880670227139}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &8257874555065513836
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3926370861074311058}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -1685509773632092758, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
 --- !u!54 &1760850705592091709
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -610,6 +616,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &8257874555065513836
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3926370861074311058}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -1685509773632092758, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
 --- !u!4 &4410877615648750888 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
@@ -670,6 +690,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
       propertyPath: m_Name
       value: Rock Type5 01 (1)
@@ -686,20 +710,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
   m_PrefabInstance: {fileID: 5099640993538998474}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2213852834416004577
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5333662354534350235}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4366418611765410115, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
 --- !u!54 &5024719648247226267
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -716,6 +726,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &2213852834416004577
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5333662354534350235}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4366418611765410115, guid: 2a801ecaad3fc49d2bc638381eebe4d7, type: 3}
 --- !u!1001 &5122745910113255016
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -771,6 +795,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 01
@@ -787,20 +815,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
   m_PrefabInstance: {fileID: 5122745910113255016}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &8961251190374977378
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5464783425492714297}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6928055016700439675, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
 --- !u!54 &6165141071821578179
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -817,6 +831,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &8961251190374977378
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5464783425492714297}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6928055016700439675, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
 --- !u!1001 &5720908100094659854
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -872,6 +900,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: a59728792cb9544c5a81b9657dfcb902, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: a59728792cb9544c5a81b9657dfcb902, type: 3}
       propertyPath: m_Name
       value: Rock Type6 03
@@ -883,20 +915,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: a59728792cb9544c5a81b9657dfcb902, type: 3}
   m_PrefabInstance: {fileID: 5720908100094659854}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &2656887503674262957
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4874537788751556703}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -2173607763647824523, guid: a59728792cb9544c5a81b9657dfcb902, type: 3}
 --- !u!54 &2017992649463208661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -913,6 +931,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &2656887503674262957
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4874537788751556703}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2173607763647824523, guid: a59728792cb9544c5a81b9657dfcb902, type: 3}
 --- !u!4 &5255145401248475877 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: a59728792cb9544c5a81b9657dfcb902, type: 3}
@@ -977,6 +1009,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
       propertyPath: m_Name
       value: Rock Type1 02
@@ -993,20 +1029,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
   m_PrefabInstance: {fileID: 5770734445339816435}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &4953943961187321315
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6689162346559573154}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 5861627387321823973, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
 --- !u!54 &839276843675665895
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1023,6 +1045,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &4953943961187321315
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6689162346559573154}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 5861627387321823973, guid: ba7c0a7a0a0c842cfb982b2d9dc121e1, type: 3}
 --- !u!1001 &6236626573058861057
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1078,6 +1114,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
       propertyPath: m_Name
       value: Rock Type6 01 (1)
@@ -1094,20 +1134,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
   m_PrefabInstance: {fileID: 6236626573058861057}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1771520468293122537
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6507027473268626768}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -6928055016700439675, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
 --- !u!54 &2702888858664336121
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1124,6 +1150,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1771520468293122537
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6507027473268626768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6928055016700439675, guid: 6e369bdf2512943ecafeef0411177cae, type: 3}
 --- !u!1001 &6648137469452429607
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1179,6 +1219,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
       propertyPath: m_Name
       value: Rock Type6 02 (1)
@@ -1190,20 +1234,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
   m_PrefabInstance: {fileID: 6648137469452429607}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &5861667411233166855
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5801626017833423990}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 7968188461868203328, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
 --- !u!54 &5816661573240921534
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1220,6 +1250,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &5861667411233166855
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5801626017833423990}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 7968188461868203328, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
 --- !u!4 &6613629182214688460 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c52bddf62b6340e2aa84518e5e00ed6, type: 3}
@@ -1280,6 +1324,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 6d3ecc697604a40c1b1ce9053e975230, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 6d3ecc697604a40c1b1ce9053e975230, type: 3}
       propertyPath: m_Name
       value: Rock Type4 02
@@ -1296,20 +1344,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 6d3ecc697604a40c1b1ce9053e975230, type: 3}
   m_PrefabInstance: {fileID: 7201242439367511818}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &1101712411784676835
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8011510153402315355}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -4809533150386778772, guid: 6d3ecc697604a40c1b1ce9053e975230, type: 3}
 --- !u!54 &7497365318411717284
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1326,6 +1360,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1101712411784676835
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8011510153402315355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -4809533150386778772, guid: 6d3ecc697604a40c1b1ce9053e975230, type: 3}
 --- !u!1001 &8503162115053284670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1381,6 +1429,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 28a2639af4d074f1882b1dd3974e2b66, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 28a2639af4d074f1882b1dd3974e2b66, type: 3}
       propertyPath: m_Name
       value: Rock Type3 03
@@ -1397,20 +1449,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 28a2639af4d074f1882b1dd3974e2b66, type: 3}
   m_PrefabInstance: {fileID: 8503162115053284670}
   m_PrefabAsset: {fileID: 0}
---- !u!64 &7610200349962428594
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8845110580726616175}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: -9204312271707044909, guid: 28a2639af4d074f1882b1dd3974e2b66, type: 3}
 --- !u!54 &2128639560068393227
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1427,3 +1465,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &7610200349962428594
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8845110580726616175}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -9204312271707044909, guid: 28a2639af4d074f1882b1dd3974e2b66, type: 3}

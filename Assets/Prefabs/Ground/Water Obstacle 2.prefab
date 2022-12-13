@@ -157,6 +157,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 9d090b08185194a5e933fa3e9f0ef8fb, type: 3}
       propertyPath: m_Name
       value: Rock Type2 02
@@ -258,6 +262,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 1ea8ec4d4cea342008b17e5ea8a50449, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 1ea8ec4d4cea342008b17e5ea8a50449, type: 3}
       propertyPath: m_Name
       value: Rock Type4 01
@@ -359,6 +367,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: cbf1819be9a0e4d6a9284550e79c7971, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: cbf1819be9a0e4d6a9284550e79c7971, type: 3}
       propertyPath: m_Name
       value: Rock Type5 04
@@ -460,6 +472,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 464951db27b7d4c189fcd059f73a197e, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 464951db27b7d4c189fcd059f73a197e, type: 3}
       propertyPath: m_Name
       value: Rock Type5 03
@@ -561,6 +577,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 10e75b940fa2d455a91e0e84908c22a9, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 04df5e5d150bb45798f7cc21213b82bf, type: 2}
     - target: {fileID: 919132149155446097, guid: 10e75b940fa2d455a91e0e84908c22a9, type: 3}
       propertyPath: m_Name
       value: Rock Type3 01
