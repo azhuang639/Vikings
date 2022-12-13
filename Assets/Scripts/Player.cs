@@ -12,17 +12,21 @@ public class Player : MonoBehaviour
 
     //end game
     public EndGame EndGameScript;
+    //private Rigidbody rigidbody; 
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        isHopping = false;
+        //rigidbody = GetComponent<Rigidbody>(); 
+        //isHopping = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+      
+    
         if (Input.GetKeyDown(KeyCode.W))// && !isHopping)
         {
             float xDifference = 0;
@@ -44,6 +48,7 @@ public class Player : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.A))// && !isHopping)
         {
             MovePlayer(new Vector3(-1, 0, 0));
+     
         }
         else if (Input.GetKeyDown(KeyCode.D))// && !isHopping)
         {
@@ -55,6 +60,33 @@ public class Player : MonoBehaviour
     {
         isHopping = false;
     }
+
+    //private void RotatePlayer()
+    //{
+    //    float horizontalInput = Input.GetAxis("Horizontal");
+    //    float verticalInput = Input.GetAxis("Vertical");
+
+    //    Vector3 movement = new Vector3(horizontalInput, 0, verticalInput).normalized;
+
+    //    if(movement == Vector3.zero)
+    //    {
+    //        return; 
+    //    }
+
+    //    Quaternion targetRotation = Quaternion.LookRotation(movement);
+
+    //    Debug.Log(targetRotation.eulerAngles);
+
+    //    targetRotation = Quaternion.RotateTowards(
+    //        transform.rotation,
+    //        targetRotation,
+    //        360 * Time.fixedDeltaTime);
+
+    //    rigidbody.MovePosition(rigidbody.position + movement * 30 * Time.fixedDeltaTime);
+    //    rigidbody.MoveRotation(targetRotation);
+
+    //}
+
 
     private void MovePlayer(Vector3 difference)
     {

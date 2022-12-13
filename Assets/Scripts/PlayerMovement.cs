@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [SerializeField] private float speed; 
    
     // Start is called before the first frame update
     void Start()
@@ -22,20 +23,23 @@ public class PlayerMovement : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.W)) {
             transform.position = (transform.position + new Vector3(1, 0, 0));
-
+            transform.Rotate(Vector3.forward * speed * Time.deltaTime); 
         }
         if (Input.GetKeyDown(KeyCode.S))
         {
             transform.position = (transform.position + new Vector3(-1, 0, 0));
+            transform.Rotate(Vector3.left * speed * Time.deltaTime);
         }
         if (Input.GetKeyDown(KeyCode.D))
         {
             transform.position = (transform.position + new Vector3(0, 0, 1));
+            transform.Rotate(Vector3.right * speed * Time.deltaTime);
 
         }
         if (Input.GetKeyDown(KeyCode.A))
         {
             transform.position = (transform.position + new Vector3(0, 0, -1));
+            transform.Rotate(-Vector3.forward * speed * Time.deltaTime);
         }
     }
 }
