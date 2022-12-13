@@ -20,7 +20,12 @@ public class LevelGenerator : MonoBehaviour
     private GameObject inGameWaterPlane;
     private int waterPlaneCounter = 1;
     private GameObject glacier;
-   
+
+    private enum GameState
+    {
+        Ingame,
+        Ended
+    }
 
     private enum TerrainType
     {
@@ -29,9 +34,12 @@ public class LevelGenerator : MonoBehaviour
         Water
     }
 
+    private GameState gameState;
+
     // Start is called before the first frame update
     void Start()
     {
+        gameState = GameState.Ingame;
         glacier = Instantiate(glacierPrefab);
         for (int i = 0; i < maxTerrainCount; i++)
         {
@@ -44,6 +52,11 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (gameState == GameState.Ended)
+        {
+            return;
+        }
+
         if (player.transform.position.z - glacier.transform.position.z > maxGlacierDistanceAway)
         {
             glacier.transform.position = new Vector3(0,
@@ -98,5 +111,10 @@ public class LevelGenerator : MonoBehaviour
         {
             terrainsQueue.Enqueue(new KeyValuePair<GameObject, int> (nextTerrains[i], 1));
         }
+    }
+
+    public void EndGame()
+    {
+        gameState = GameState.Ended;
     }
 }

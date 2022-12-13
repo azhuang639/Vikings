@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        levelGenerator.EndGame();
         Destroy(gameObject);
     }
 }
