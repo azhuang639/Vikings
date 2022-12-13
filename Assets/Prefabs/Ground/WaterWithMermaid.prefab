@@ -82,7 +82,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7519805205414969065}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -146,3 +146,6 @@ MonoBehaviour:
   spawnPos: {fileID: 1365641253}
   minSeparationTime: 1
   maxSeparationTime: 3
+  minXPosition: -40
+  maxXPosition: 40
+  numMermaids: 20
