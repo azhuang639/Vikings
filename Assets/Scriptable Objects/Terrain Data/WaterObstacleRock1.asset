@@ -17,4 +17,4 @@ MonoBehaviour:
   maxRows: 3
   multipleTerrains: []
   region: {fileID: 7519805205414969065, guid: b6e751dddf2a84e1ca426247805fc949, type: 3}
-  regionRowSize: 3
+  regionRowSize: 1

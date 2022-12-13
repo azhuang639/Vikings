@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
   m_Name: Water
   m_EditorClassIdentifier: 
+  terrainType: 0
   terrain: {fileID: 7519805205414969065, guid: f3fa91c2407e94933af0fb875f44126d, type: 3}
-  maxRows: 5
+  maxRows: 3
+  multipleTerrains: []
+  region: {fileID: 0}
+  regionRowSize: 0

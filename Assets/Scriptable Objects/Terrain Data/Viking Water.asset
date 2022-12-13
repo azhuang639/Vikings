@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainType: 0
   terrain: {fileID: 3547559692553360514, guid: bc0e64e89f73b4ff7b1e5fbbbc68168b, type: 3}
-  maxRows: 3
+  maxRows: 1
   multipleTerrains: []
   region: {fileID: 0}
   regionRowSize: 0
