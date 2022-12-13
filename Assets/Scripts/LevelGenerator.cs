@@ -43,7 +43,7 @@ public class LevelGenerator : MonoBehaviour
     {
         gameState = GameState.Ingame;
         glacier = Instantiate(glacierPrefab);
-        currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, 0), Quaternion.identity));
+        currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0.1f, 0), Quaternion.identity));
 
         for (int i = 0; i < maxTerrainCount; i++)
         {
