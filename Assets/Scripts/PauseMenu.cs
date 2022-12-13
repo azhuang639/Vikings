@@ -8,6 +8,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenu;
     public bool isPaused;
     public GameObject bgmusic;
+    public GameObject shipMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         isPaused = true;
         bgmusic.GetComponent<AudioSource>().Pause();
+        shipMusic.GetComponent<AudioSource>().Pause();
 
     }
 
@@ -35,6 +37,7 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         bgmusic.GetComponent<AudioSource>().Play();
+        shipMusic.GetComponent<AudioSource>().Play();
 
     }
 

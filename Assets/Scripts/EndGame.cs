@@ -10,6 +10,7 @@ public class EndGame : MonoBehaviour
     public GameObject endMenu;
     public bool isOver;
     public GameObject bgmusic;
+    public GameObject shipMusic;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,6 +28,7 @@ public class EndGame : MonoBehaviour
         endMenu.SetActive(true);
         isOver = true;
         bgmusic.GetComponent<AudioSource>().Stop();
+        shipMusic.GetComponent<AudioSource>().Stop();
 
     }
 
