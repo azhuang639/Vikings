@@ -678,6 +678,10 @@ PrefabInstance:
       value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: waterTerrain
+      value: 
+      objectReference: {fileID: 7519805205414969065, guid: f3fa91c2407e94933af0fb875f44126d, type: 3}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: glacierPrefab
       value: 
       objectReference: {fileID: 966518066063053049, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
@@ -687,7 +691,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: maxGlacierDistanceAway
-      value: 12
+      value: 12.5
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.size

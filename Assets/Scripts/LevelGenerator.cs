@@ -8,6 +8,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private float glacierSpeed = 0.4f;
     [SerializeField] private float maxGlacierDistanceAway = 12f;
 
+    [SerializeField] private GameObject waterTerrain;
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
     [SerializeField] private GameObject waterPlane;
@@ -20,6 +21,7 @@ public class LevelGenerator : MonoBehaviour
     private GameObject inGameWaterPlane;
     private int waterPlaneCounter = 1;
     private GameObject glacier;
+    private List<GameObject> currentWaterPlanes = new List<GameObject>();
 
     private enum GameState
     {
@@ -97,6 +99,14 @@ public class LevelGenerator : MonoBehaviour
 
     private void GenerateTerrainQueue()
     {
+        if (currentPosition.z < 0)
+        {
+            for (int i = 0; i < 15; i++)
+            {
+                terrainsQueue.Enqueue(new KeyValuePair<GameObject, int>(waterTerrain, 1));
+            }
+            return;
+        }
         TerrainData nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
         //handles region
         if (nextTerrainInQueue.terrainType == TerrainData.TerrainType.Region)
