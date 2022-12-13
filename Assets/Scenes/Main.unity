@@ -239,57 +239,6 @@ MonoBehaviour:
   player: {fileID: 99087836}
   offset: {x: 4, y: 5, z: 1}
   smoothness: 0.01
---- !u!1 &979097980
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 979097981}
-  - component: {fileID: 979097982}
-  m_Layer: 0
-  m_Name: Glacier Controller
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &979097981
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979097980}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.6244726, y: 4.56914, z: 1.197448}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &979097982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 979097980}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7482dccda59f4acbb0a09ccb237bcd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 0.3
-  glacier: {fileID: 1558839903}
---- !u!1 &1558839903 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 966518066063053049, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-  m_PrefabInstance: {fileID: 966518065049473702}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1678300679
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -354,12 +303,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 181007296531135188, guid: 59236745002f54d4d9349a3623c1aae9, type: 3}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: glacierSpeed
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: glacierPrefab
+      value: 
+      objectReference: {fileID: 966518066063053049, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: maxTerrainCount
       value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.size
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[0]
@@ -368,27 +325,27 @@ PrefabInstance:
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[1]
       value: 
-      objectReference: {fileID: 11400000, guid: 380b4a626991844b5a344776db0017bc, type: 2}
+      objectReference: {fileID: 11400000, guid: cf518082c9c654907b91687b94a916b1, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[2]
       value: 
-      objectReference: {fileID: 11400000, guid: cf518082c9c654907b91687b94a916b1, type: 2}
+      objectReference: {fileID: 11400000, guid: 729d0fcec70ae4143a26c6fc5199f435, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 729d0fcec70ae4143a26c6fc5199f435, type: 2}
+      objectReference: {fileID: 11400000, guid: 9c7d130bc24504a54828815939e764b8, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 9c7d130bc24504a54828815939e764b8, type: 2}
+      objectReference: {fileID: 11400000, guid: 82dc79b0641504535b35561b9d988b83, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: 82dc79b0641504535b35561b9d988b83, type: 2}
+      objectReference: {fileID: 11400000, guid: 330fd5dfa615b41b18c03351428dbbd5, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 330fd5dfa615b41b18c03351428dbbd5, type: 2}
+      objectReference: {fileID: 11400000, guid: 654a010cedd80454c9abc44b0bd644b0, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[7]
       value: 
@@ -493,63 +450,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!1001 &966518065049473702
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -10
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063052997, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 966518066063053049, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
-      propertyPath: m_Name
-      value: Glacier
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
 --- !u!1001 &8317434003650115634
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -613,6 +513,10 @@ PrefabInstance:
       propertyPath: levelGenerator
       value: 
       objectReference: {fileID: 262012938}
+    - target: {fileID: 5476107592925690911, guid: 5cbd3f24c129d46b3a88285abc689568, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8317434003277291967, guid: 5cbd3f24c129d46b3a88285abc689568, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0

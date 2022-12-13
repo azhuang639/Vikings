@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class LevelGenerator : MonoBehaviour
 {
+    [SerializeField] private GameObject glacierPrefab;
+    [SerializeField] private float glacierSpeed;
+
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
     [SerializeField] private GameObject waterPlane;
@@ -15,6 +18,7 @@ public class LevelGenerator : MonoBehaviour
     private List<GameObject> currentTerrains = new List<GameObject>();
     private GameObject inGameWaterPlane;
     private int waterPlaneCounter = 1;
+    private GameObject glacier;
    
 
     private enum TerrainType
@@ -27,6 +31,7 @@ public class LevelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        glacier = Instantiate(glacierPrefab);
         for (int i = 0; i < maxTerrainCount; i++)
         {
             SpawnTerrain(0);
@@ -38,10 +43,7 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.W))
-        //{
-        //    SpawnTerrain();
-        //}
+        glacier.transform.position = glacier.transform.position + new Vector3(0, 0, glacierSpeed * Time.deltaTime); ;
     }
 
     public void SpawnTerrain(float playerZPosition)

@@ -62,4 +62,9 @@ public class Player : MonoBehaviour
         transform.position = transform.position + difference;
         levelGenerator.SpawnTerrain(transform.position.z);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        Destroy(gameObject);
+    }
 }

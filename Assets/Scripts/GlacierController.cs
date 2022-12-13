@@ -10,7 +10,7 @@ public class GlacierController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Instantiate(glacier);
     }
 
     // Update is called once per frame
