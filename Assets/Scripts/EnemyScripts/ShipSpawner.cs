@@ -9,6 +9,8 @@ public class ShipSpawner : MonoBehaviour
     [SerializeField] private float minSeparationTime;
     [SerializeField] private float maxSeparationTime;
 
+    private List<GameObject> currentShips = new List<GameObject>();
+
     private void Start()
     {
         StartCoroutine(SpawnShip()); 
@@ -21,9 +23,17 @@ public class ShipSpawner : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(Random.Range(minSeparationTime, maxSeparationTime));
-            Instantiate(ship, spawnPos.position, Quaternion.identity);
+            currentShips.Add(Instantiate(ship, spawnPos.position, Quaternion.identity));
         }
      
+    }
+
+    private void OnDestroy()
+    {
+        foreach (GameObject currentShip in currentShips)
+        {
+            Destroy(currentShip);
+        }
     }
 }
 
