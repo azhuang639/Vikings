@@ -5,7 +5,8 @@ using UnityEngine;
 public class LevelGenerator : MonoBehaviour
 {
     [SerializeField] private GameObject glacierPrefab;
-    [SerializeField] private float glacierSpeed;
+    [SerializeField] private float glacierSpeed = 0.4f;
+    [SerializeField] private float maxGlacierDistanceAway = 12f;
 
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
@@ -43,7 +44,13 @@ public class LevelGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        glacier.transform.position = glacier.transform.position + new Vector3(0, 0, glacierSpeed * Time.deltaTime); ;
+        if (player.transform.position.z - glacier.transform.position.z > maxGlacierDistanceAway)
+        {
+            glacier.transform.position = new Vector3(0,
+                1,
+                player.transform.position.z - maxGlacierDistanceAway);
+        }
+        glacier.transform.position = glacier.transform.position + new Vector3(0, 0, glacierSpeed * Time.deltaTime);
     }
 
     public void SpawnTerrain(float playerZPosition)
