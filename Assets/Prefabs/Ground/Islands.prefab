@@ -845,7 +845,7 @@ GameObject:
   - component: {fileID: 10260556401194220}
   - component: {fileID: 10260556401194221}
   m_Layer: 0
-  m_Name: Island Water
+  m_Name: Islands
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

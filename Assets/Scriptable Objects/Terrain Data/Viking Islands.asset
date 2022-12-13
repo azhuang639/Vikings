@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
-  m_Name: WaterWithShipRight
+  m_Name: Viking Islands
   m_EditorClassIdentifier: 
   terrainType: 0
-  terrain: {fileID: 7519805205414969065, guid: dbffb1ed30e65476d96cc936aca5e164, type: 3}
-  maxRows: 3
+  terrain: {fileID: 3547559692553360514, guid: bc0e64e89f73b4ff7b1e5fbbbc68168b, type: 3}
+  maxRows: 1
   multipleTerrains: []
   region: {fileID: 0}
   regionRowSize: 0

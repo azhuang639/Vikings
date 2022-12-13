@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3797127558731090978
+--- !u!1 &1365641252
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,7 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3797127558731090979}
+  - component: {fileID: 1365641253}
   m_Layer: 0
   m_Name: SpawnPosition
   m_TagString: Untagged
@@ -16,22 +16,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3797127558731090979
+--- !u!4 &1365641253
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3797127558731090978}
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.5, y: 0.5, z: 0}
+  m_GameObject: {fileID: 1365641252}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children: []
-  m_Father: {fileID: 8094919265169018602}
+  m_Father: {fileID: 7519805205414969061}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!1 &8151016037077972050
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &7519805205414969065
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -39,49 +39,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 8094919265169018602}
-  - component: {fileID: 6695073206463707874}
-  - component: {fileID: 6695073206463707873}
-  - component: {fileID: 6695073206463707872}
-  - component: {fileID: 3797127560074863644}
+  - component: {fileID: 7519805205414969061}
+  - component: {fileID: 7519805205414969060}
+  - component: {fileID: 7519805205414969063}
+  - component: {fileID: 7519805205414969062}
+  - component: {fileID: -6023729421065131504}
   m_Layer: 0
-  m_Name: WaterWithShipLeft
+  m_Name: Mermaid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &8094919265169018602
+--- !u!4 &7519805205414969061
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8151016037077972050}
+  m_GameObject: {fileID: 7519805205414969065}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.66254044, y: 0, z: -10.2}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 50, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 3797127558731090979}
+  - {fileID: 1365641253}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &6695073206463707874
+--- !u!33 &7519805205414969060
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8151016037077972050}
+  m_GameObject: {fileID: 7519805205414969065}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &6695073206463707873
+--- !u!23 &7519805205414969063
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8151016037077972050}
+  m_GameObject: {fileID: 7519805205414969065}
   m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -117,32 +117,35 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &6695073206463707872
+--- !u!65 &7519805205414969062
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8151016037077972050}
+  m_GameObject: {fileID: 7519805205414969065}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3797127560074863644
+--- !u!114 &-6023729421065131504
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8151016037077972050}
+  m_GameObject: {fileID: 7519805205414969065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1e1253b74fc214e3c91cb68a04fcabeb, type: 3}
+  m_Script: {fileID: 11500000, guid: 28461e9c8d3d04f3e97e6ca48a2f9d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 1121350757672930037, guid: d9589cf6f7e954c30b4a2d6407a706f3, type: 3}
-  spawnPos: {fileID: 3797127558731090979}
-  minSeparationTime: 3
-  maxSeparationTime: 5
+  mermaid: {fileID: 8768626846385257702, guid: 9ab26c80166b2468d86d813140c98246, type: 3}
+  spawnPos: {fileID: 1365641253}
+  minSeparationTime: 1
+  maxSeparationTime: 3
+  minXPosition: -40
+  maxXPosition: 40
+  numMermaids: 20

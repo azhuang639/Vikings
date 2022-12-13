@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1365641252}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0.5, z: 0}
   m_LocalScale: {x: 0.61, y: 0.61, z: 0.61}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -43,9 +43,9 @@ GameObject:
   - component: {fileID: 7519805205414969060}
   - component: {fileID: 7519805205414969063}
   - component: {fileID: 7519805205414969062}
-  - component: {fileID: -6023729421065131504}
+  - component: {fileID: 25092122}
   m_Layer: 0
-  m_Name: WaterWithMermaid
+  m_Name: Ship Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -130,7 +130,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-6023729421065131504
+--- !u!114 &25092122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,13 +139,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7519805205414969065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 28461e9c8d3d04f3e97e6ca48a2f9d4b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1e1253b74fc214e3c91cb68a04fcabeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mermaid: {fileID: 8768626846385257702, guid: 9ab26c80166b2468d86d813140c98246, type: 3}
+  ship: {fileID: 1121350757672930037, guid: 5edc0a9181f974be8bed1b70efd9baf7, type: 3}
   spawnPos: {fileID: 1365641253}
-  minSeparationTime: 1
-  maxSeparationTime: 3
-  minXPosition: -40
-  maxXPosition: 40
-  numMermaids: 20
+  minSeparationTime: 3
+  maxSeparationTime: 5

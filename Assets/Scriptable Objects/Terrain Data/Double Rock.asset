@@ -10,7 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
-  m_Name: WaterWithShipLeft
+  m_Name: Double Rock
   m_EditorClassIdentifier: 
-  terrain: {fileID: 8151016037077972050, guid: 0ca0e87ca88304c85bf69346966be8ce, type: 3}
+  terrainType: 2
+  terrain: {fileID: 6742250947582588701, guid: 2d3026041968f4350bdc2912c67b7ea4, type: 3}
   maxRows: 3
+  multipleTerrains: []
+  region: {fileID: 5427073869561788805, guid: b18f7625e3ea149049b7c75ee7b38fb3, type: 3}
+  regionRowSize: 2

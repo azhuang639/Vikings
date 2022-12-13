@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7519805205414969063}
   - component: {fileID: 7519805205414969062}
   m_Layer: 0
-  m_Name: Water Obstacle 1
+  m_Name: Rocks 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
