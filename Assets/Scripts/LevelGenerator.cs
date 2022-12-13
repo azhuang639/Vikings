@@ -48,7 +48,7 @@ public class LevelGenerator : MonoBehaviour
             SpawnTerrain(0);
         }
 
-        inGameWaterPlane = Instantiate(waterPlane, new Vector3(0, 0, 0), Quaternion.identity);
+        currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, 0), Quaternion.identity));
     }
 
     // Update is called once per frame
@@ -72,8 +72,14 @@ public class LevelGenerator : MonoBehaviour
     {
         if (currentPosition.z > (waterPlaneCounter-1) * 50)
         {
-            Instantiate(waterPlane, new Vector3(0, 0, waterPlaneCounter * 50), Quaternion.identity);
+            currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, waterPlaneCounter * 50), Quaternion.identity));
             waterPlaneCounter++;
+            if (currentWaterPlanes.Count > 2)
+            {
+                GameObject removedWaterPlane = currentWaterPlanes[0];
+                currentWaterPlanes.RemoveAt(0);
+                Destroy(removedWaterPlane);
+            }
         }
         if (currentPosition.z - playerZPosition > maxTerrainCount - 10)
         {
