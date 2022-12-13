@@ -43,12 +43,13 @@ public class LevelGenerator : MonoBehaviour
     {
         gameState = GameState.Ingame;
         glacier = Instantiate(glacierPrefab);
+        currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, 0), Quaternion.identity));
+
         for (int i = 0; i < maxTerrainCount; i++)
         {
             SpawnTerrain(0);
         }
 
-        currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, 0), Quaternion.identity));
     }
 
     // Update is called once per frame
@@ -74,7 +75,7 @@ public class LevelGenerator : MonoBehaviour
         {
             currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, waterPlaneCounter * 50), Quaternion.identity));
             waterPlaneCounter++;
-            if (currentWaterPlanes.Count > 2)
+            if (currentWaterPlanes.Count > 3)
             {
                 GameObject removedWaterPlane = currentWaterPlanes[0];
                 currentWaterPlanes.RemoveAt(0);
