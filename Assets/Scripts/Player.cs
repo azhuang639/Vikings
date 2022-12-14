@@ -31,6 +31,7 @@ public class Player : MonoBehaviour
     
         if (Input.GetKeyDown(KeyCode.W))// && !isHopping)
         {
+            transform.rotation = Quaternion.identity;
             float xDifference = 0;
             if (transform.position.x % 1 != 0)
             {
@@ -40,6 +41,7 @@ public class Player : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.S))// && !isHopping)
         {
+            transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, -1));
             float xDifference = 0;
             if (transform.position.x % 1 != 0)
             {
@@ -49,11 +51,13 @@ public class Player : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.A))// && !isHopping)
         {
+            transform.rotation = Quaternion.LookRotation(new Vector3(-1, 0, 0));
             MovePlayer(new Vector3(-1, 0, 0));
      
         }
         else if (Input.GetKeyDown(KeyCode.D))// && !isHopping)
         {
+            transform.rotation = Quaternion.LookRotation(new Vector3(1, 0, 0));
             MovePlayer(new Vector3(1, 0, 0));
         }
     }
