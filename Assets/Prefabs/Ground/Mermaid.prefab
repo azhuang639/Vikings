@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28461e9c8d3d04f3e97e6ca48a2f9d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mermaid: {fileID: 8768626846385257702, guid: 9ab26c80166b2468d86d813140c98246, type: 3}
+  mermaid: {fileID: 7519805205414969065}
   spawnPos: {fileID: 1365641253}
   minSeparationTime: 1
   maxSeparationTime: 3
