@@ -12,7 +12,9 @@ public class Player : MonoBehaviour
 
     //end game
     public EndGame EndGameScript;
-    //private Rigidbody rigidbody; 
+    //private Rigidbody rigidbody;
+
+    public GameObject shipWreck;
 
     // Start is called before the first frame update
     void Start()
@@ -100,6 +102,7 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        shipWreck.GetComponent<AudioSource>().Play();
         levelGenerator.EndGame();
         Destroy(gameObject);
         Debug.Log("player lost");

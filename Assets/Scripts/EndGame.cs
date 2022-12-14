@@ -11,6 +11,9 @@ public class EndGame : MonoBehaviour
     public bool isOver;
     public GameObject bgmusic;
     public GameObject shipMusic;
+    public GameObject shipWreck;
+    public GameObject gameOver;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +32,8 @@ public class EndGame : MonoBehaviour
         isOver = true;
         bgmusic.GetComponent<AudioSource>().Stop();
         shipMusic.GetComponent<AudioSource>().Stop();
+        gameOver.GetComponent<AudioSource>().Play();
+
 
     }
 
