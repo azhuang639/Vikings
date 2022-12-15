@@ -19,7 +19,7 @@ public class Scoring : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.W) && player.transform.position.z >= score)
+        if (player != null && Input.GetKeyDown(KeyCode.W) && player.transform.position.z >= score)
         {
             score +=1;
 

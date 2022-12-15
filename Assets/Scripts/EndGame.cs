@@ -23,7 +23,6 @@ public class EndGame : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
     public void endGame()
@@ -33,7 +32,6 @@ public class EndGame : MonoBehaviour
         bgmusic.GetComponent<AudioSource>().Stop();
         shipMusic.GetComponent<AudioSource>().Stop();
         gameOver.GetComponent<AudioSource>().Play();
-
 
     }
 
