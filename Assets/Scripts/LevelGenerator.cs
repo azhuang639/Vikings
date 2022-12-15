@@ -45,6 +45,7 @@ public class LevelGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        glacierSpeed = 0.4f;
         gameState = GameState.Ingame;
         glacier = Instantiate(glacierPrefab);
         currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0.1f, 0), Quaternion.identity));
@@ -77,6 +78,17 @@ public class LevelGenerator : MonoBehaviour
 
     public void SpawnTerrain(float playerZPosition)
     {
+        if (playerZPosition >= 20 && playerZPosition < 40)
+        {
+            glacierSpeed = 0.6f;
+        } else if (playerZPosition >= 40 && playerZPosition < 60)
+        {
+            glacierSpeed = 0.8f;
+        } else if (playerZPosition >= 60)
+        {
+            glacierSpeed = 1f;
+        }
+
         if (currentPosition.z > (waterPlaneCounter-1) * 50)
         {
             currentRightBorders.Add(Instantiate(borderPrefab, new Vector3(20, 0, waterPlaneCounter * 50), Quaternion.identity));
