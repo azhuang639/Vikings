@@ -45,7 +45,7 @@ GameObject:
   - component: {fileID: 7519805205414969062}
   - component: {fileID: -6023729421065131504}
   m_Layer: 0
-  m_Name: Mermaid
+  m_Name: WaterWithMermaid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28461e9c8d3d04f3e97e6ca48a2f9d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mermaid: {fileID: 7519805205414969065}
+  mermaid: {fileID: 5710595327104973859, guid: 6e2a53c882c6442c98942993ac9494cb, type: 3}
   spawnPos: {fileID: 1365641253}
   minSeparationTime: 1
   maxSeparationTime: 3
