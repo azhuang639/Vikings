@@ -27,6 +27,8 @@ public class LevelGenerator : MonoBehaviour
     private List<GameObject> currentRightBorders = new List<GameObject>();
     private List<GameObject> currentLeftBorders = new List<GameObject>();
 
+    private int terrainCounter = 0;
+
     private enum GameState
     {
         Ingame,
@@ -122,7 +124,7 @@ public class LevelGenerator : MonoBehaviour
         }
         if (terrainsQueue.Count == 0)
         {
-            GenerateTerrainQueue();
+            GenerateTerrainQueue(playerZPosition);
         }
 
         KeyValuePair<GameObject, int> terrainPairFromQueue = terrainsQueue.Dequeue();
@@ -132,8 +134,9 @@ public class LevelGenerator : MonoBehaviour
         currentTerrains.Add(terrain);
     }
 
-    private void GenerateTerrainQueue()
+    private void GenerateTerrainQueue(float playerZPosition)
     {
+        terrainCounter++;
         if (currentPosition.z < 0)
         {
             for (int i = 0; i < 15; i++)
@@ -142,6 +145,27 @@ public class LevelGenerator : MonoBehaviour
             }
             return;
         }
+
+        //PROGRESSION
+        //positions 0-30: every other generated terrain is empty with 2 bars
+        //positions 30-100: every other generated terrain is empty with 1 bars
+        //positions 100+: no empty bars guaranteed to be generated
+        //
+
+        if (playerZPosition < 30 && terrainCounter % 2 == 0)
+        {
+            terrainsQueue.Enqueue(new KeyValuePair<GameObject, int>(waterTerrain, 1));
+            terrainsQueue.Enqueue(new KeyValuePair<GameObject, int>(waterTerrain, 1));
+            return;
+        }
+
+        if (playerZPosition >= 30 && playerZPosition < 100 && terrainCounter % 2 == 0)
+        {
+            terrainsQueue.Enqueue(new KeyValuePair<GameObject, int>(waterTerrain, 1));
+            return;
+        }
+
+
         TerrainData nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
         //handles region
         if (nextTerrainInQueue.terrainType == TerrainData.TerrainType.Region)
