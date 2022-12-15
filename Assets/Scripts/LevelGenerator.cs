@@ -80,13 +80,13 @@ public class LevelGenerator : MonoBehaviour
 
     public void SpawnTerrain(float playerZPosition)
     {
-        if (playerZPosition >= 20 && playerZPosition < 40)
+        if (playerZPosition >= 20 && playerZPosition < 50)
         {
             glacierSpeed = 0.6f;
-        } else if (playerZPosition >= 40 && playerZPosition < 60)
+        } else if (playerZPosition >= 50 && playerZPosition < 80)
         {
             glacierSpeed = 0.8f;
-        } else if (playerZPosition >= 60)
+        } else if (playerZPosition >= 80)
         {
             glacierSpeed = 1f;
         }
