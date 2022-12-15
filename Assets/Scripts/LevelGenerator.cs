@@ -146,11 +146,10 @@ public class LevelGenerator : MonoBehaviour
             return;
         }
 
-        //PROGRESSION
+        //PROGRESSION WITH EMPTY BARS
         //positions 0-30: every other generated terrain is empty with 2 bars
         //positions 30-100: every other generated terrain is empty with 1 bars
         //positions 100+: no empty bars guaranteed to be generated
-        //
 
         if (playerZPosition < 30 && terrainCounter % 2 == 0)
         {
@@ -165,8 +164,22 @@ public class LevelGenerator : MonoBehaviour
             return;
         }
 
+        //PROGRESSION WITH BAR TYPES
+        //z positions 0-25: normal
+        //z positions 25-50: added ships
+        //positions 50+: added mermaids and fish
 
-        TerrainData nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
+        TerrainData nextTerrainInQueue;
+        if (currentPosition.z < 25)
+        {
+            nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count-4)];
+        } else if (currentPosition.z < 50)
+        {
+            nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count-2)];
+        } else
+        {
+            nextTerrainInQueue = terrainDatas[Random.Range(0, terrainDatas.Count)];
+        }
         //handles region
         if (nextTerrainInQueue.terrainType == TerrainData.TerrainType.Region)
         {

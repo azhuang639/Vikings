@@ -1696,7 +1696,7 @@ PrefabInstance:
       objectReference: {fileID: 966518066063053049, guid: dc2da1ad070d34c72a426f98127baaac, type: 3}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: maxTerrainCount
-      value: 40
+      value: 45
       objectReference: {fileID: 0}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: maxGlacierDistanceAway
@@ -1725,11 +1725,11 @@ PrefabInstance:
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[4]
       value: 
-      objectReference: {fileID: 11400000, guid: 82dc79b0641504535b35561b9d988b83, type: 2}
+      objectReference: {fileID: 11400000, guid: 2559b02a618e443428e63e885c656e38, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[5]
       value: 
-      objectReference: {fileID: 11400000, guid: b61bb4506795845329bac23f14d57173, type: 2}
+      objectReference: {fileID: 11400000, guid: e16396482405c45b3977e943d6309f9e, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[6]
       value: 
@@ -1741,11 +1741,11 @@ PrefabInstance:
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[8]
       value: 
-      objectReference: {fileID: 11400000, guid: 2559b02a618e443428e63e885c656e38, type: 2}
+      objectReference: {fileID: 11400000, guid: 82dc79b0641504535b35561b9d988b83, type: 2}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: terrainDatas.Array.data[9]
       value: 
-      objectReference: {fileID: 11400000, guid: e16396482405c45b3977e943d6309f9e, type: 2}
+      objectReference: {fileID: 11400000, guid: b61bb4506795845329bac23f14d57173, type: 2}
     - target: {fileID: 5575375506575081622, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: m_Name
       value: Level Generator
