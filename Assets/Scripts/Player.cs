@@ -107,6 +107,7 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         shipWreck.GetComponent<AudioSource>().Play();
+        Debug.Log("Object that collided with me: " + other.gameObject.name);
         levelGenerator.EndGame();
         Destroy(gameObject);
         Debug.Log("player lost");
