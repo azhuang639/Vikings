@@ -24,7 +24,6 @@ public class MermaidSpawner : MonoBehaviour
         //ships spawn indefinitely 
         while (numMermaids >0)
         {
-            print("mermaid spawned");
             yield return new WaitForSeconds(Random.Range(minSeparationTime, maxSeparationTime));
             Instantiate(mermaid, new Vector3(Mathf.Round(spawnPos.position.x + Random.Range(minXPosition, maxXPosition)), Mathf.Round(spawnPos.position.y), Mathf.Round(spawnPos.position.z)), Quaternion.identity);
             numMermaids--;
