@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657838, g: 0.49641234, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1114,6 +1114,7 @@ MonoBehaviour:
   scoreText: {fileID: 2038025288}
   highScoreText: {fileID: 2118879899}
   player: {fileID: 99087836}
+  newHighScore: 0
   score: 0
 --- !u!114 &928205327 stripped
 MonoBehaviour:
@@ -1677,6 +1678,10 @@ PrefabInstance:
       propertyPath: waterPlane
       value: 
       objectReference: {fileID: 181007296531135188, guid: 59236745002f54d4d9349a3623c1aae9, type: 3}
+    - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
+      propertyPath: borderPrefab
+      value: 
+      objectReference: {fileID: 966518066063053049, guid: b072a59fbc2fd4c87a67bc8fc723021e, type: 3}
     - target: {fileID: 5575375506575081617, guid: 4a4f34277c5ab4e47bc06139e4a8c883, type: 3}
       propertyPath: glacierSpeed
       value: 0.4

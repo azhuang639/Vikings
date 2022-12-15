@@ -8,6 +8,8 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private float glacierSpeed = 0.4f;
     [SerializeField] private float maxGlacierDistanceAway = 12f;
 
+    [SerializeField] private GameObject borderPrefab;
+
     [SerializeField] private GameObject waterTerrain;
     [SerializeField] private int maxTerrainCount;
     [SerializeField] private List<TerrainData> terrainDatas = new List<TerrainData>();
@@ -22,6 +24,8 @@ public class LevelGenerator : MonoBehaviour
     private int waterPlaneCounter = 1;
     private GameObject glacier;
     private List<GameObject> currentWaterPlanes = new List<GameObject>();
+    private List<GameObject> currentRightBorders = new List<GameObject>();
+    private List<GameObject> currentLeftBorders = new List<GameObject>();
 
     private enum GameState
     {
@@ -44,6 +48,8 @@ public class LevelGenerator : MonoBehaviour
         gameState = GameState.Ingame;
         glacier = Instantiate(glacierPrefab);
         currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0.1f, 0), Quaternion.identity));
+        currentRightBorders.Add(Instantiate(borderPrefab, new Vector3(20, 0, 0), Quaternion.identity));
+        currentLeftBorders.Add(Instantiate(borderPrefab, new Vector3(-20, 0, 0), Quaternion.identity));
 
         for (int i = 0; i < maxTerrainCount; i++)
         {
@@ -73,6 +79,8 @@ public class LevelGenerator : MonoBehaviour
     {
         if (currentPosition.z > (waterPlaneCounter-1) * 50)
         {
+            currentRightBorders.Add(Instantiate(borderPrefab, new Vector3(20, 0, waterPlaneCounter * 50), Quaternion.identity));
+            currentLeftBorders.Add(Instantiate(borderPrefab, new Vector3(-20, 0, waterPlaneCounter * 50), Quaternion.identity));
             currentWaterPlanes.Add(Instantiate(waterPlane, new Vector3(0, 0, waterPlaneCounter * 50), Quaternion.identity));
             waterPlaneCounter++;
             if (currentWaterPlanes.Count > 3)
@@ -80,6 +88,14 @@ public class LevelGenerator : MonoBehaviour
                 GameObject removedWaterPlane = currentWaterPlanes[0];
                 currentWaterPlanes.RemoveAt(0);
                 Destroy(removedWaterPlane);
+
+                GameObject removedRightBorder = currentRightBorders[0];
+                currentRightBorders.RemoveAt(0);
+                Destroy(removedRightBorder);
+
+                GameObject removedLeftBorder = currentLeftBorders[0];
+                currentLeftBorders.RemoveAt(0);
+                Destroy(removedLeftBorder);
             }
         }
         if (currentPosition.z - playerZPosition > maxTerrainCount - 10)
