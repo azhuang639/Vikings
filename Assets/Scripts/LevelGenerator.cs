@@ -18,7 +18,7 @@ public class LevelGenerator : MonoBehaviour
     [SerializeField] private Queue<KeyValuePair<GameObject, int>> terrainsQueue = new Queue<KeyValuePair<GameObject, int>>();
     [SerializeField] private GameObject player;
 
-    private Vector3 currentPosition = new Vector3(0, 0, -9);
+    private Vector3 currentPosition = new Vector3(0, 0, -7);
     private List<GameObject> currentTerrains = new List<GameObject>();
     private GameObject inGameWaterPlane;
     private int waterPlaneCounter = 1;
@@ -98,7 +98,7 @@ public class LevelGenerator : MonoBehaviour
                 Destroy(removedLeftBorder);
             }
         }
-        if (currentPosition.z - playerZPosition > maxTerrainCount - 10)
+        if (currentPosition.z - playerZPosition > maxTerrainCount - 8)
         {
             return;
         }
