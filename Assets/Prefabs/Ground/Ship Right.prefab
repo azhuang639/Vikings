@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e1253b74fc214e3c91cb68a04fcabeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ship: {fileID: 1121350757672930037, guid: 5edc0a9181f974be8bed1b70efd9baf7, type: 3}
+  ship: {fileID: 1121350757672930037, guid: 2c21f34aa41094684b6c25671fd69043, type: 3}
   spawnPos: {fileID: 1365641253}
   minSeparationTime: 3
   maxSeparationTime: 5
