@@ -7,12 +7,16 @@ using TMPro;
 public class Scoring : MonoBehaviour
 {
     [SerializeField] private TMP_Text scoreText;
+    [SerializeField] private TMP_Text highScoreText;
     public GameObject player;
+
+    public bool newHighScore = false;
 
     public int score = 0;
     // Start is called before the first frame update
     void Start()
     {
+        highScoreText.text = "High Score: " + PlayerPrefs.GetInt("highScore");
     }
 
 
@@ -25,5 +29,16 @@ public class Scoring : MonoBehaviour
 
         }
         scoreText.text = "Score: " + score;
+        CheckHighScore();
+    }
+
+    void CheckHighScore()
+    {
+        if (score > PlayerPrefs.GetInt("highScore", 0))
+        {
+            PlayerPrefs.SetInt("highScore", score);
+            highScoreText.text = "High Score: " + score;
+            newHighScore = true;
+        }
     }
 }
