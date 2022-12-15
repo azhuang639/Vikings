@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6ef9aa2338729486c93494379ddf4a87, type: 3}
-  m_Name: WaterWithMermaid
+  m_Name: Water With Fish
   m_EditorClassIdentifier: 
   terrainType: 0
-  terrain: {fileID: 7519805205414969065, guid: 1379a0b301fdb4784a7af7ee1a26c6ae, type: 3}
+  terrain: {fileID: 7519805205414969065, guid: 359f84ebcab7a43eb9eac39cc33ebde3, type: 3}
   maxRows: 2
   multipleTerrains: []
   region: {fileID: 0}
