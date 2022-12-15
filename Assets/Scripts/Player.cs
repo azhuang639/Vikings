@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
     {
         shipWreck.GetComponent<AudioSource>().Play();
         levelGenerator.EndGame();
-        //Destroy(gameObject);
+        Destroy(gameObject);
         Debug.Log("player lost");
         EndGameScript.endGame();
     }
