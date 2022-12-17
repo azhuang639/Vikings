@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5710595327104973870}
   m_Layer: 0
   m_Name: BobbingMermaid
-  m_TagString: Untagged
+  m_TagString: Mermaid
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

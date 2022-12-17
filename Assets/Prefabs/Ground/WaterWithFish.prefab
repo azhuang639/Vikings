@@ -142,10 +142,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28461e9c8d3d04f3e97e6ca48a2f9d4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mermaid: {fileID: 4020408590165472473, guid: ab39a973c35f741ae9c62d66c557c673, type: 3}
+  bobbingEnemy: {fileID: 4020408590165472473, guid: ab39a973c35f741ae9c62d66c557c673, type: 3}
   spawnPos: {fileID: 1365641253}
   minSeparationTime: 1
   maxSeparationTime: 3
   minXPosition: -20
   maxXPosition: 20
-  numMermaids: 10
+  numBobbingEnemies: 10

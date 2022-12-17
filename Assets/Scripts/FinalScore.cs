@@ -8,6 +8,7 @@ public class FinalScore : MonoBehaviour
 {
     [SerializeField] private TMP_Text finalScoreText;
     public Scoring script;
+
     // Start is called before the first frame update
     void Start()
     {

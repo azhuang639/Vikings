@@ -5,23 +5,18 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     [SerializeField] private LevelGenerator levelGenerator;
-    //[SerializeField] private Camera mainCamera;
 
     private Animator animator;
     private bool isHopping;
 
     //end game
-    public EndGame EndGameScript;
-    //private Rigidbody rigidbody;
-
+    public GameStateManager GameStateManagerScript;
     public GameObject shipWreck;
 
     // Start is called before the first frame update
     void Start()
     {
         animator = GetComponent<Animator>();
-        //rigidbody = GetComponent<Rigidbody>(); 
-        //isHopping = false;
     }
 
     // Update is called once per frame
@@ -29,7 +24,7 @@ public class Player : MonoBehaviour
     {
       
     
-        if (Input.GetKeyDown(KeyCode.W))// && !isHopping)
+        if (Input.GetKeyDown(KeyCode.W))
         {
             transform.rotation = Quaternion.identity;
             float xDifference = 0;
@@ -39,7 +34,7 @@ public class Player : MonoBehaviour
             }
             MovePlayer(new Vector3(xDifference, 0, 1));
         }
-        else if (Input.GetKeyDown(KeyCode.S))// && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.S))
         {
             transform.rotation = Quaternion.LookRotation(new Vector3(0, 0, -1));
             float xDifference = 0;
@@ -49,13 +44,13 @@ public class Player : MonoBehaviour
             }
             MovePlayer(new Vector3(xDifference, 0, -1));
         }
-        else if (Input.GetKeyDown(KeyCode.A))// && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.A))
         {
             transform.rotation = Quaternion.LookRotation(new Vector3(-1, 0, 0));
             MovePlayer(new Vector3(-1, 0, 0));
      
         }
-        else if (Input.GetKeyDown(KeyCode.D))// && !isHopping)
+        else if (Input.GetKeyDown(KeyCode.D))
         {
             transform.rotation = Quaternion.LookRotation(new Vector3(1, 0, 0));
             MovePlayer(new Vector3(1, 0, 0));
@@ -67,37 +62,9 @@ public class Player : MonoBehaviour
         isHopping = false;
     }
 
-    //private void RotatePlayer()
-    //{
-    //    float horizontalInput = Input.GetAxis("Horizontal");
-    //    float verticalInput = Input.GetAxis("Vertical");
-
-    //    Vector3 movement = new Vector3(horizontalInput, 0, verticalInput).normalized;
-
-    //    if(movement == Vector3.zero)
-    //    {
-    //        return; 
-    //    }
-
-    //    Quaternion targetRotation = Quaternion.LookRotation(movement);
-
-    //    Debug.Log(targetRotation.eulerAngles);
-
-    //    targetRotation = Quaternion.RotateTowards(
-    //        transform.rotation,
-    //        targetRotation,
-    //        360 * Time.fixedDeltaTime);
-
-    //    rigidbody.MovePosition(rigidbody.position + movement * 30 * Time.fixedDeltaTime);
-    //    rigidbody.MoveRotation(targetRotation);
-
-    //}
-
 
     private void MovePlayer(Vector3 difference)
     {
-        //mainCamera.transform.position = mainCamera.transform.position + difference;
-        //animator.ResetTrigger("hop");
         animator.SetTrigger("hop");
         isHopping = true;
         transform.position = transform.position + difference;
@@ -107,10 +74,10 @@ public class Player : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         shipWreck.GetComponent<AudioSource>().Play();
-        Debug.Log("Object that collided with me: " + other.gameObject.name);
+        //Debug.Log("Object that collided with me: " + other.gameObject.tag);
         levelGenerator.EndGame();
         Destroy(gameObject);
-        Debug.Log("player lost");
-        EndGameScript.endGame();
+        //Debug.Log("player lost");
+        GameStateManagerScript.endGame();
     }
 }
