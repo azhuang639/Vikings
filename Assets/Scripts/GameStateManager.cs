@@ -27,6 +27,17 @@ public class GameStateManager : MonoBehaviour
         
     }
 
+    public void loadGame()
+    {
+        SceneManager.LoadScene("Main");
+    }
+
+    public void loadStartMenu()
+    {
+        SceneManager.LoadScene("StartMenu");
+
+    }
+
     public void pauseGame()
     {
         pauseMenu.SetActive(true);
